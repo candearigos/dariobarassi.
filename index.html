@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dario Barassi</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="contenedora">
+    <header>
+    <div class="titulo">
+    <h2>MEET & GREET</h2>
+    <h3>CON</h3>
+ </div>
+    </header>
+    <section class="tituloimg">
+        <h1>DARIO BARASSI</h1>
+        <div class="fotoppal">
+            <img class="mySlides" src="../dario.barassi/imgs/img.ppal.jpg" alt="imgppal">
+            <img class="mySlides" src="../dario.barassi/imgs/img.ppal2.jpg" alt="imgppal">
+        </div>
+        <div class="info">
+            <p class="fecha">21 SEPTIEMBRE</p>
+            <p class="horario">18 HS</p>
+            <p class="lugar">ARENA</p>
+        </div>
+    </section>
+    <section class="formyfoto">
+        <div class="formulario">
+            <h2>¡Completá el formulario para conocer a Dario Barassi!</h2>
+            <form method="POST" action="candelarigos@gmail.com">
+                <div>
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <span>DNI</span>
+                    <input type="text" name="dni" required>
+                </div>
+                <div>
+                    <span>Telefono</span>
+                    <input type="text" name="telefono" required>
+                </div>
+                <div class="envi">
+                    <input class="enviar" type="submit" name="btnenvio" value="Enviar">
+                </div>
+ </form>
+
+        </div>
+        <div class="fotocirculo">
+            <img src="../dario.barassi/imgs/circulo2.png" alt="imgcirculo">
+        </div>
+    </section>
+<section class="redesociales">
+<div class="redessociales">
+    <a href="https://www.instagram.com/dariobarassi/?hl=es-la" target="_blank"><img src="..//dario.barassi/imgs/ig.png" alt="ig"></a>
+    <a href="https://www.facebook.com/search/top?q=dario%20barassi" target="_blank"> <img src="..//dario.barassi/imgs/fb.png" alt="fb"></a>
+    <a href="https://www.youtube.com/results?search_query=100+argentinos+dicen" target="_blank"> <img src="..//dario.barassi/imgs/yt.png" alt="yt"></a>
+
+</div>
+</section>
+    
+    <footer class="footer">
+    <p>Derechos Reservados 2021 - Candela Arigós</p>
+    </footer> 
+</div>
+</body>
+
+
+</html>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+        var i;
+        // acá define qué elemento entra en el slider
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        x[slideIndex-1].style.display = "block"; 
+    }
+    carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+}
+</script>	
