@@ -144,17 +144,20 @@ footer{
     .info{
         display: flex;
         flex-flow: wrap;
-        margin-left: 5%;
+        margin-left: 12%;
         margin-top: 2%;
         color:rgb(32, 32, 32);
         width: 100%;
     }
     .info p{
         padding-right: 10%;
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Julius Sans One', sans-serif;
         margin-bottom: 4%;
-    }    
+    }  
+    .formyfoto{
+        display: block;
+    }  
     .formulario{
         width: 70%;
         margin-left: 12%;
@@ -184,9 +187,6 @@ footer{
 }
 
 @media(max-width: 480px){
-    body{
-        width: 100%;
-    }
     .contenedora{
         width: 96%;
         margin-left: 20%;
