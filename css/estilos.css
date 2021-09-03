@@ -8,14 +8,14 @@
 }
 .contenedora{
     width: 80%;
-    margin-left: 10%;
+    margin: 0 auto;
     background-color:  rgb(110, 110, 110);
     border:rgb(63, 63, 63) 5px solid;
     color: white;
 }
 .fotoppal{
     width: 80%;
-    margin-left: 10%;
+    margin: 0 auto;
 }
 .fotoppal img{
     width: 100%;
@@ -59,12 +59,15 @@
 .formulario{
     width: 35%;
     margin: 2%;
+    margin-left: 3%;
     padding: 2%;
     margin-top: 5%;
     border:#FAE659 5px solid;
     background-color:rgb(149, 199, 228) ;
+    font-family: 'Julius Sans One', sans-serif;
 
 }
+
 .formulario div{
     padding-top: 3% ;
 }
@@ -74,22 +77,22 @@
     margin-top: 2%;
     border-radius: 2px;
     border:none;
+    padding: 7px;
 }
 .formulario span{
     margin-left: 3%;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 1%;
 }
 .fotocirculo{
-    display: flex;
-    flex-flow: wrap;
+    width: 35%;
     
 }
 .fotocirculo img{
     border-radius: 50%;
     width: 100%;
-    float: right;
-    margin-left: 25%;
+    margin-left: 40%;
+    margin-top: 20%;
     
 }
 .envi{
@@ -125,6 +128,11 @@ footer{
     color: black;
     background-color: rgb(176, 200, 214) ;
     height: 100px;
+    margin-top: 5%;
+}
+footer span{
+    margin: 2%;
+    margin-top: 5%;
 }
 
 @media(max-width: 768px){
@@ -166,14 +174,12 @@ footer{
         margin-left: 12%;
     }
     .fotocirculo{
-        width: 80%;
-        display: flex;
-        flex-flow: wrap;
+        width: 60%;
+       
     }
     .fotocirculo img{
         width: 100%;
-        float: right;
-        margin-left: 15%;
+        margin-left: 32%;
     }
     .redessociales{
         display: flex;
@@ -191,16 +197,18 @@ footer{
 
 @media(max-width: 480px){
     .contenedora{
-        width: 96%;
-        margin-left: 20%;
-        margin-right: 0%;
+        width: 100%;
+        margin: 0%;
         background-color:  rgb(110, 110, 110);
         border:rgb(63, 63, 63) 5px solid;
         color: white;
     }
+    .body{
+        background-image: none;
+    }
     .fotoppal{
         width: 100%;
-        margin-left: 0%;
+        margin: 0%;
        
     }
     .fotoppal img{
@@ -249,12 +257,12 @@ footer{
     }
    
     .fotocirculo{
-        width: 100%;
-        display: block;
+        width: 80%;
+       
     }
     .fotocirculo img{
-        width: 100%;
-        margin-left: 2%;
+        margin-bottom: 10%;
+        margin-left: 12%;
     }
 
     .formyfoto{
