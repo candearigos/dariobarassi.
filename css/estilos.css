@@ -124,16 +124,19 @@
     
     
 }
-footer{
+.footer{
     color: black;
     background-color: rgb(176, 200, 214) ;
     height: 100px;
-    margin-top: 5%;
+    text-align: center;
+
+    
 }
-footer span{
-    margin: 2%;
-    margin-top: 5%;
+.footer p{
+    padding-top: 4%;
+    justify-content: center;
 }
+
 
 @media(max-width: 768px){
     .tituloimg h1{
@@ -202,9 +205,11 @@ footer span{
         background-color:  rgb(110, 110, 110);
         border:rgb(63, 63, 63) 5px solid;
         color: white;
+        box-sizing: border-box;
     }
     .body{
         background-image: none;
+        width: 0%;
     }
     .fotoppal{
         width: 100%;
